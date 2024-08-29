@@ -1,0 +1,22 @@
+en:
+  hello: "Hello world"
+  links:
+    edit: "Edit"
+    show: "Show"
+    delete: "Delete"
+    new: "New Coin"
+  table:
+    description: "Description"
+    acronym: "Acronym"
+    image: "Image"
+    mining_type: "Mining Type"
+    actions: "Actions"
+  wallet: "Wallet of "
+  coins: "Coins"
+  name: "Write your name"
+  register_mining_type: "Register Mining Types"
+  name_application: "CRYPTO WALLET APP"
+  welcome: "Welcome!"
+  language: "The language in use is: "
+  enviroment: "You are on enviroment of "
+  wallet_: "Wallet"

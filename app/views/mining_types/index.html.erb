@@ -1,0 +1,28 @@
+<big><center><%= link_to "Home", welcome_index_path %></center></big>
+
+<h1><%= t('tables.mining_type')%></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= t('tables.description')%></th>
+      <th><%= t('tables.acronym')%></th>
+      <th><%= t('tables.actions')%></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @mining_types.each do |mining_type| %>
+      <tr id="<%= dom_id(mining_type) %>">
+        <td><%= mining_type.description %></td>
+        <td><%= mining_type.acronym %></td>
+        <td>
+          <%= link_to t('links.show'), mining_type %> |
+          <%= link_to t('links.edit'), edit_mining_type_path(mining_type) %> |
+          <%= link_to t('links.delete'), mining_type, method: :delete, data: { confirm: 'Tem certeza?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('links.new'), new_mining_type_path %>

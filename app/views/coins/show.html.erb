@@ -1,0 +1,36 @@
+<% if notice %>
+  <p style="color: green"><%= notice %></p>
+<% end %>
+
+<h1><%= @coin.description %></h1>
+
+<table>
+  <tr>
+    <th>Descrição</th>
+    <td><%= @coin.description %></td>
+  </tr>
+  <tr>
+    <th>Sigla</th>
+    <td><%= @coin.acronym %></td>
+  </tr>
+  <tr>
+    <th>Imagem</th>
+    <td><%= image_tag @coin.url_image, width: 50, height: 50 %></td>
+  </tr>
+  <tr>
+    <th>Tipo de Mineração</th>
+    <td><%= @coin.mining_type_id%></td>
+  </tr>
+</table>
+
+<div>
+  <%= link_to "Editar", edit_coin_path(@coin) %> |
+  <%= link_to "Voltar", coins_path %> |
+  <%= button_to "Apagar esta moeda", @coin, method: :delete%>
+</div>
+
+<br>
+
+<div>
+  <%= link_to "Voltar para Moedas", coins_path %>
+</div>

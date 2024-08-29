@@ -1,0 +1,22 @@
+pt-BR:
+  hello: "Olá Mundo"
+  links:
+    edit: "Editar"
+    show: "Mostrar"
+    delete: "Apagar"
+    new: "Nova Moeda"
+  table:
+    description: "Descrição"
+    acronym: "Sigla"
+    image: "Imagem"
+    mining_type: "Tipo de Mineração"
+    actions: "Ações"
+  wallet: "Carteira de "
+  coins: "Moedas"
+  name: "Escreva seu nome"
+  register_mining_type: "Cadastro de Tipos de Mineração"
+  name_application: "CARTEIRA DE CRYPTO MOEDAS"
+  welcome: "Seja bem-vindo!"
+  language: "O idioma usado nessa aplicação é: "
+  enviroment: "Você está em ambiente de "
+  wallet_: "Carteira"

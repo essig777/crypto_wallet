@@ -1,0 +1,26 @@
+<p style="color: green"><%= notice %></p>
+
+<h1><%= @mining_type.description %></h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <td><%= @mining_type.description %></td>
+  </tr>
+  <tr>
+    <th>Sigla</th>
+    <td><%= @mining_type.acronym %></td>
+  </tr>
+</table>
+
+<div>
+  <%= link_to "Editar", edit_mining_type_path(@mining_type) %> |
+  <%= link_to "Voltar", mining_types_path %> |
+  <%= button_to "Apagar", @mining_type, method: :delete, data: { confirm: 'Tem certeza?' } %>
+</div>
+
+<br>
+
+<div>
+  <%= link_to "Voltar", mining_types_path %>
+</div>
